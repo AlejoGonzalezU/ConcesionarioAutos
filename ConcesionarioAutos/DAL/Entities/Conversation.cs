@@ -7,9 +7,9 @@ namespace ConcesionarioAutos.DAL.Entities
 {
     public class Conversation : Entity
     {
-        public int IdCliente { get; set; }
+        public string IdCliente { get; set; }
 
-        public int IdEmpleado { get; set; }
+        public string IdEmpleado { get; set; }
 
         [Display(Name = "Fecha de inicio")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
@@ -24,7 +24,7 @@ namespace ConcesionarioAutos.DAL.Entities
         public virtual Client Client { get; set; }
 
         [ForeignKey("IdEmpleado")]
-        public virtual User Employee { get; set; }
+        public virtual User ApplicationUser { get; set; }
     }
 }
 

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace ConcesionarioAutos.DAL.Entities
 {
+    // Se requiere heredar de IdentityUser para que pueda tener las características de la tabla creada
     public class User : IdentityUser
     {
         [Display(Name = "Fecha de creación")]

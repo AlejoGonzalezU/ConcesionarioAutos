@@ -7,7 +7,7 @@ namespace ConcesionarioAutos.DAL.Entities
 {
     public class Message : Entity
     {
-        public int IdConversacion { get; set; }
+        public string IdConversacion { get; set; }
 
         [Display(Name = "Autor")]
         [MaxLength(255, ErrorMessage = "El campo {0} debe tener máximo {1} caracteres.")]
